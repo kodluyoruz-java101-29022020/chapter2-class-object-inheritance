@@ -1,4 +1,4 @@
-package main.inheritance.sample;
+package main.multilevel.inheritance.sample;
 
 public class ElectricCar extends Car 
 {
@@ -16,6 +16,18 @@ public class ElectricCar extends Car
 		// Bu kurucu metot "public Car(String brand, String licensePlate)" kendisidir.
 		
 		super(brand, licensePlate);
+		
+		this.power = power;
+		
+	}
+	
+	
+	public ElectricCar(String brand, String licensePlate, double power,  short wheelCount) {
+		
+		// Car sınıfına ait parametreli kurucu metodu çağırıyoruz.
+		// Bu kurucu metot "public Car(String brand, String licensePlate)" kendisidir.
+		
+		super(brand, licensePlate, wheelCount);
 		
 		this.power = power;
 		
@@ -49,7 +61,8 @@ public class ElectricCar extends Car
 		
 		super.showInfo();
 		
-		this.showInfo();
+		// this ile çağrılırsa kendi showInfo fonksiyonunu çağırır.
+		// this.showInfo();
 		
 		System.out.println(this.power);
 	}

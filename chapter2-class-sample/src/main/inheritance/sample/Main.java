@@ -39,6 +39,12 @@ public class Main {
 		// downcasting yaptık
 		ElectricCar electricCar4 = (ElectricCar)car3;
 		
+		boolean isCarItem = electricCar4 instanceof Car;
+		System.out.println(isCarItem);
+		
+		boolean isElectricCarItem = electricCar4 instanceof ElectricCar;
+		System.out.println(isElectricCarItem);
+		
 		// upcasting yaptık.
 		Car car4 = truckCar;
 		
@@ -51,6 +57,22 @@ public class Main {
 	public static void printCarInfo(Car[] cars) {
 		
 		for(Car car : cars) {
+			
+			if(car instanceof TruckCar) {
+				
+				TruckCar truckCar = (TruckCar)car;
+				System.out.println("TruckCar item found!");
+			}
+			else if(car instanceof BusCar) {
+				
+				BusCar busCar = (BusCar)car;
+				System.out.println("BusCar item found!");
+			}
+			else if(car instanceof ElectricCar) {
+				
+				ElectricCar electricCar = (ElectricCar)car;
+				System.out.println("ElectricCar item found!");
+			}
 			
 			car.showInfo();
 			System.out.println("-------------");

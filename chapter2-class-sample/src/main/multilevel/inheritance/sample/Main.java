@@ -8,6 +8,7 @@ public class Main {
 		
 		electricCar.setPlateNumber("34 AL asda");
 
+		electricCar.showInfo();
 	}
 
 }

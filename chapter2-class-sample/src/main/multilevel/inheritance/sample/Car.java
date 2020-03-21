@@ -40,6 +40,7 @@ public class Car extends Vehicle {
 
 
 	// Eğer bu fonksiyon Car sınıfında olmasaydı. Bir üstteki Vehicle'a bakacaktı.
+	/*
 	public void showInfo() {
 		
 		super.showInfo();
@@ -47,5 +48,6 @@ public class Car extends Vehicle {
 		System.out.println(this.plateNumber);
 		System.out.println(this.brand);
 	}
+	*/
 
 }

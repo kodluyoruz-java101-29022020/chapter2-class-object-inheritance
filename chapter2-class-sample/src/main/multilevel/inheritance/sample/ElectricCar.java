@@ -21,7 +21,6 @@ public class ElectricCar extends Car
 		
 	}
 	
-	
 	public ElectricCar(String brand, String licensePlate, double power,  short wheelCount) {
 		
 		// Car sınıfına ait parametreli kurucu metodu çağırıyoruz.

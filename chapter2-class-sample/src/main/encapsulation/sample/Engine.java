@@ -31,7 +31,7 @@ public class Engine {
 				while(status) {
 					temperature += 55;
 					
-					// her 25 saniyede bir motorun sıcaklık derecesi 5 derece artıyor.
+					// her 2.5 saniyede bir motorun sıcaklık derecesi 5 derece artıyor.
 					try {
 						Thread.sleep(2500);
 					} 

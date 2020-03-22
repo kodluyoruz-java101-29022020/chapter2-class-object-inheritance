@@ -22,7 +22,7 @@ public class Main {
 			
 			timeCount += 1000;
 			
-			Thread.sleep(100);
+			Thread.sleep(200);
 			
 			// eğer 1 dakikayı geçtiyse testi sonlandırıp motoru durdururuz.
 			if(timeCount > 60000) {

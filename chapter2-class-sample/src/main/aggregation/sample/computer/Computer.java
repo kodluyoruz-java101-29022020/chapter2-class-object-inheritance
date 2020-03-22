@@ -23,6 +23,9 @@ public class Computer {
 	
 	protected Keyboard keyboard;
 	protected Screen screen;
+	protected int size;
+	protected String material;
+
 	
 	protected Computer(Screen screen, Keyboard keyboard) {
 		

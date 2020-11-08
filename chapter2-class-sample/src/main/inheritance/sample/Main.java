@@ -13,17 +13,24 @@ public class Main {
 		electricCar.setPlateNumber("45 AN 5322");
 		electricCar.charge(200);
 		
-		TruckCar truckCar = new TruckCar();
-		truckCar.setBrand("BMC");
-		truckCar.setPlateNumber("54 AN 3341");
-		truckCar.enableTowingTruck(true);
+		TruckCar truckCar = new TruckCar("BMC", "54 AN 3341", "4x4", true, true);
 		
 		BusCar busCar = new BusCar();
 		busCar.setBrand("Mercedes");
 		busCar.setPlateNumber("06 AN 4342");
-		busCar.setSeatcCount(54);
+		busCar.setSeatCount(54);
 		
 		
+		baseCar.showInfo();
+		
+		electricCar.showInfo();
+		
+		truckCar.showInfo();
+		
+		busCar.showInfo();
+		
+		
+		/*
 		Car[] cars = new Car[4];
 		cars[0] = electricCar;
 		cars[1] = truckCar;
@@ -52,6 +59,7 @@ public class Main {
 		// ElectricCar electricCar5 = (ElectricCar)car4;
 		
 		TruckCar truckCar2 = (TruckCar)car4;
+		*/
 	}
 	
 	public static void printCarInfo(Car[] cars) {

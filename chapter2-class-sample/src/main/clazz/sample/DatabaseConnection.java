@@ -21,6 +21,11 @@ public class DatabaseConnection {
 		this.portNo = portNo;
 	}
 	
+	public DatabaseConnection(String url, String name) {
+		this.url = url;
+		this.name = name;
+	}
+	
 	
 	public DatabaseConnection(String url, String name, int portNo) {
 		
@@ -35,10 +40,11 @@ public class DatabaseConnection {
 	
 	public boolean open() {
 		
-		
 		// metodun kod kapsamı
 		
 		// veritabanı sunucusuna bağlanmak için kodlar yazılır.
+		
+		DatabaseConnection.show(name);
 		
 		return true;
 	}
@@ -55,9 +61,12 @@ public class DatabaseConnection {
 			// veritabanı bağlantısı ile ilgili özet bilgiler yazdırılır.
 			System.out.println(this.url);
 		}
-		
 	}
 
+	public static void show(String name) {
+		
+		System.out.println("Database name:" + name);
+	}
 	
 	// sınıfın kod kapsamı
 }

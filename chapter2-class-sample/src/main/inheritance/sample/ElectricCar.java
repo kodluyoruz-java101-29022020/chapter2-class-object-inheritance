@@ -3,6 +3,7 @@ package main.inheritance.sample;
 public class ElectricCar extends Car 
 {
 	private double power = 0;
+	private double chargeTime = 0;
 	
 	public ElectricCar() {
 		
@@ -10,15 +11,23 @@ public class ElectricCar extends Car
 		super();
 	}
 
-	public ElectricCar(String brand, String licensePlate, double power) {
+	public ElectricCar(
+			String brand, 
+			String licensePlate, 
+			double power,
+			double chargeTime) {
 		
 		// Car sınıfına ait parametreli kurucu metodu çağırıyoruz.
 		// Bu kurucu metot "public Car(String brand, String licensePlate)" kendisidir.
 		
 		super(brand, licensePlate);
 		
-		this.power = power;
+		// super is used for parent class access!
+		//super.brand = brand;
+		//super.plateNumber = plateNumber;
 		
+		this.power = power;
+		this.chargeTime = chargeTime;
 	}
 
 	
@@ -49,9 +58,11 @@ public class ElectricCar extends Car
 		
 		super.showInfo();
 		
-		this.showInfo();
+		//this.showInfo();
 		
-		System.out.println(this.power);
+		System.out.println("Power: " + this.power);
+		
+		System.out.println("Charge time: " + this.chargeTime);
 	}
 	
 	

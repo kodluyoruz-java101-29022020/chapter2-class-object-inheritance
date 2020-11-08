@@ -8,7 +8,6 @@ public class Car {
 	// aracın plaka bilgisi
 	protected String plateNumber;
 	
-	
 	public Car() {
 		this.brand = "NO_BRAND";
 		this.plateNumber = "NO_PLATE_NUMBER";

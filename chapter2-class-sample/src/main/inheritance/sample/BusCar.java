@@ -1,19 +1,29 @@
 package main.inheritance.sample;
 
-public class BusCar extends Car{
+public class BusCar extends Car {
 
 	private int seatCount;
+	private int extraBaggageCount;
 	
-	public void setSeatcCount(int seatCount2) {
-		this.seatCount = seatCount2;
+	
+	public void setSeatCount(int seatCount) {
+		this.seatCount = seatCount;
+	}
+	
+	public void setExtraBaggageCount(int extraBaggageCount) {
+		this.extraBaggageCount = extraBaggageCount;
 	}
 	
 	@Override
 	public void showInfo() {
 		
 		System.out.println("<< BusCar Info >>");
+		
 		super.showInfo();
-		System.out.println(this.seatCount);
+		
+		System.out.println("Seat count: " + this.seatCount);
+		
+		System.out.println("Extra baggage size: " + this.extraBaggageCount);
 	}
 	
 }

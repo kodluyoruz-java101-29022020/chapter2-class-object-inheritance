@@ -15,6 +15,14 @@ public class Main {
 
 		DatabaseConnection dbConnection3 = new DatabaseConnection("jdbc:Mysql//11.145.23.24", "admin_db", 3307);
 
+		DatabaseConnection dbConnection4 = new DatabaseConnection();
+		
+		DatabaseConnection dbConnection41 = new DatabaseConnection();
+		
+		DatabaseConnection dbConnection5 = new DatabaseConnection("jdbc:Mysql//11.145.23.24", 3307);
+		
+		DatabaseConnection dbConnection6 = new DatabaseConnection("jdbc:Mysql//11.145.23.24", "admin_db");
+		
 
 		dbConnection.showDatabaseInfo(true);
 		
@@ -22,6 +30,9 @@ public class Main {
 		
 		dbConnection2.showDatabaseInfo(true);
 		dbConnection3.showDatabaseInfo(true);
+		
+		dbConnection4.showDatabaseInfo(false);
+		dbConnection5.showDatabaseInfo(true);
 
 		
 		
